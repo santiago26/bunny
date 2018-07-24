@@ -4,7 +4,8 @@
   "description": "rabbitmq test",
   "main": "index.js",
   "dependencies": {
-    "amqplib": "^0.5.2"
+    "amqplib": "^0.5.2",
+    "restify": "^7.2.1"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 var amqp = require('amqplib/callback_api')
+var creds = require('./credentials')
 
-amqp.connect('amqp://localhost', function (err, conn) {
+amqp.connect(creds, function (err, conn) {
   conn.createChannel(function (err, ch) {
     var q = 'hello'
 
